@@ -1,9 +1,55 @@
 .hero-container {
   display: grid;
-  grid-template-columns: 60% 40%;
+  grid-template-columns: 70% 30%;
+  position: relative;
 }
 .hero-left {
   background-color: #f4f4f4;
+  padding: 40px 30px;
+}
+.welcome-fresh {
+  color: #749b3f;
+  padding: 3px;
+  font-size: 18px;
+}
+.hero-title {
+  font-size: 50px;
+  width: 500px;
+}
+.hero-details {
+  margin: 10px 0;
+  font-size: 17px;
+  width: 500px;
+}
+.shop-now {
+  background-color: #ff6a1a;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+}
+.special-offer {
+  background-color: rgb(212, 209, 209);
+  padding: 10px 5px;
+  border-radius: 10px;
+  width: 210px;
+  margin: 20px 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.s-title {
+  color: #749b3f;
+}
+.s-main-title {
+  font-size: 25px;
+}
+.up-to {
+  color: green;
+}
+.up-to > span {
+  font-size: 18px;
+  color: black;
 }
 .hero-right {
   background-color: #759b40;
