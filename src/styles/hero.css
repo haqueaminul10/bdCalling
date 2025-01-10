@@ -1,0 +1,10 @@
+.hero-container {
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+.hero-left {
+  background-color: #f4f4f4;
+}
+.hero-right {
+  background-color: #759b40;
+}
