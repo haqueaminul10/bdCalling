@@ -4,8 +4,15 @@ import CartIcon from '@/icon/cart';
 import logo from '../assets/Logo.png';
 import Image from 'next/image';
 import MenuIcon from '@/icon/menu';
+import { useState } from 'react';
+import Login from '../auth/Login';
 const Navbar = () => {
   const navbarMenu = ['Home', 'Shop', 'About us', 'Blog'];
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleModal = () => {
+    setIsOpen(!isOpen);
+  };
   return (
     <div className='navbar-container '>
       <section className='left-section' style={{ backgroundColor: '#f4f4f4' }}>
@@ -39,10 +46,12 @@ const Navbar = () => {
         <div className='signin-button-container hide-on-mobile'>
           <button
             className='signin-button'
+            onClick={toggleModal}
             style={{ backgroundColor: '#759b40' }}
           >
             Sign In
           </button>
+          {isOpen && <Login />}
         </div>
       </section>
     </div>
